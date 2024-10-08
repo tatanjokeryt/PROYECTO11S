@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+</head>
+<body>
+    <div class="panel-nav">
+        <div class="img">
+            <img class="logo" id="logo" src="asserts/logos/pepsi-logo-94D7DEF922-seeklogo.com.png" alt="">
+        </div>
+    <div class="nav">
+        <nav class="nav">
+            <ul class="list">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="2index.html">Como jugar</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>      
+          </nav>
+    </div>
+    </div>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Escribe cualquier duda o molestia que tengas.</p>
+        <form action="https://formspree.io/f/mbljrzgn" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="_replyto" placeholder="Your email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
+<style>
+    /* Estilo general */
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Panel de navegación */
+.panel-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 10px 20px;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+/* Estilo para la imagen/logo */
+.img .logo {
+    width: 100px; /* Ajusta según el tamaño deseado */
+    height: auto;
+}
+
+/* Estilos para la navegación */
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    background-color: #e01111;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .panel-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav ul li {
+        margin: 5px 0;
+    }
+}
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #d81f1f;
+}
+</style>
